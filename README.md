@@ -1,0 +1,2 @@
+# Woo-Products-Slider-Pro
+WooCommerce Product Carousel / Slider Pro comes with all Pro Features and is one of the best product slider to put your WooCommerce Products listing in a carousal. Choose products from Top Rated Category, Best Selling Category, ON Sale Category, Featured Category Products With Custom Category Filter enabled. You can easily display this product slider anywhere using shortcode.
