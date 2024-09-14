@@ -1,17 +1,18 @@
 === Free Woocommerce Products Slider/Carousel Pro ===
 Contributors: sajjad67
-Tags: best selling products, best selling products slider, slick slider, best selling products by category, shortcode, template code, featured product, featured product slider, Featured product by category, autoplay slider, best product slider, best product slider for woo shop, carousel, clean woo product slider, multiple product slider, product carousel,  product content slider, product contents carousel, product slider, product slider carousel for woo, products slider,  responsive product slider, responsive product carousel, slider, smooth product slider woo product slider,  advance slider, woo best selling products, woo category slider, latest products, most selling products, product carousel slider, recent product carousel, recent product slider, free,premium,pro
+Tags: product carousel, responsive product slider, slick slider, advanced slider, woo product carousel
 Requires at least: 5.6
-Tested up to: 6.0
+Tested up to: 6.6
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Display Woocommerce Products in a Carousel / Slider. Show Top Rated Products, Best Selling Products, ON Sale Products And Featured Products With Category Filter.
+Display Woocommerce Products in a Carousel / Slider. Show Top Rated, Best Selling, ON Sale, Featured, Recently Viewed Products With Category Filter.
 
 == Description ==
 WooCommerce Product Carousel / Slider Pro comes with all Pro Features and is one of the best product slider to put your WooCommerce Products listing in a carousal. Choose products from Top Rated Category, Best Selling Category, ON Sale Category, Featured Category Products With Custom Category Filter enabled. You can easily display this product slider anywhere using shortcode.
 
-You can sort product by category by adding category ID in the shortcode as a shortcode parameter.
+You can sort product by category, tag, sku or attributes by adding category ID / tag ID / sku / attribute term in the shortcode as a shortcode parameter.
 
 Plugin add a sub tab under "Products --> Product Slider Pro where you can generate your shortcode putting inputs values.
 
@@ -19,26 +20,33 @@ This plugin using the original loop form of WooCommerce that means it will displ
 
 Also work with Gutenberg shortcode block.
 
-= This plugin contain 5 shortcodes: =
-1) Display any WooCommerce **products** filtered by category in carousel view
+= This plugin contain 6 shortcodes: =
+1) Display any WooCommerce **products** filtered by category / tag / sku / attribute in carousel view
 
-<code>[woopspro_products_slider] OR [woopspro_products_slider cats="CATEGORY-ID"]</code>
+<code>[woopspro_products_slider] OR [woopspro_products_slider cats="CATEGORY-ID" tags="TAG-ID" skus="SKU-VALUE" attribute_color="blue,green,red" attribute_size="medium,big"]</code>
 
-2) Display WooCommerce **Best Selling Product in carousel view**
+2) Display WooCommerce **Best Selling Products in carousel view**
 
 <code>[woopspro_bestselling_products_slider] OR [woopspro_bestselling_products_slider cats="CATEGORY-ID"]</code>
 
-3) Display WooCommerce **Featured Product in slider / carousel view**
+3) Display WooCommerce **Featured Products in slider / carousel view**
 
 <code>[woopspro_featured_products_slider] OR [woopspro_featured_products_slider cats="CATEGORY-ID"]</code>
 
-4) Display WooCommerce **ON Sale Product in slider / carousel view**
+4) Display WooCommerce **ON Sale Products in slider / carousel view**
 
 <code>[woopspro_on_sale_products_slider] OR [woopspro_on_sale_products_slider cats="CATEGORY-ID"]</code>
 
-5) Display WooCommerce **Top Rated Product in slider / carousel view**
+5) Display WooCommerce **Top Rated Products in slider / carousel view**
 
 <code>[woopspro_top_rated_products_slider] OR [woopspro_top_rated_products_slider cats="CATEGORY-ID"]</code>
+
+6) Display WooCommerce **Recently Viewed Products in slider / carousel view**
+
+<code>[woopspro_recently_viewed_products]</code>
+
+= Ordering Products in your slider: =
+Plugin shortcodes also has ordering arguments. <code>[woopspro_products_slider order='ASC' orderby='ID']</code> <code>[woopspro_products_slider order='ASC' orderby='meta_value_num' meta_key='your_custom_key']</code>
 
 = Powerfull Pro Features: =
 
@@ -48,7 +56,12 @@ Also work with Gutenberg shortcode block.
 * ON Sale products slider
 * Top Rated products slider
 * Display Latest/Recent Products Slider
+* Display Recently Viewed Products
 * Sort by Category 
+* Sort by Tag 
+* Sort by Sku 
+* Sort by Attributes 
+* Order By Your Own Custom Value
 * 100% Mobile & Tablet Responsive
 * Awesome Touch-Swipe Enabled
 * Translation Ready
@@ -60,18 +73,37 @@ Also work with Gutenberg shortcode block.
 * Navigation show/hide options
 * Pagination show/hide options
 * Unlimited slider anywhere
+* Filter to limit slide number for each device (Mobile/Tablet/iPad/Laptop/Desktop)
 
 = You can use Following parameters with shortcode =
 * **Display Product by category:** 
 cats="category-ID" 
+* **Display Product by tag:** 
+tags="tag-ID"
+* **Display Product by sku:** 
+skus="sku-value"
+* **Display Product by attribute:** 
+attribute_color="red,green,blue" 
 * **Display Product by ids (comma seperated ids):** 
 ids="45,194,465" 
 * **limit:**
-limit="5" ( ie Display 5 product at time. By defoult value is -1 ie all )
-* **Display number of products at time:**
-slide_to_show="2" (Display no of products in a slider )
-* **Number of products slides at a time:**
+limit="5" ( Display total 5 products in the slider. By default value is -1, all)
+* **Display number of products at a time:**
+slide_to_show="2" (Display no of products in a slider)
+* **Display number of products at time for mobile devices:**
+slide_to_show_for_mobile="1" (Display no of products in a slider for mobile devices)
+* **Display number of products at time for iPads/Tablets devices:**
+slide_to_show_for_tablet="2" (Display no of products in a slider for iPads/Tablets devices)
+* **Display number of products at time for Laptop/Small devices:**
+slide_to_show_for_laptop="3" (Display no of products in a slider for Laptop/Small devices)
+* **Number of products slides at a time for mobile devices:**
 slide_to_scroll="2" (Controls number of products rotate at a time)
+* **Number of products slides at a time:**
+slide_to_scroll_for_mobile="2" (Controls number of products rotate at a time for mobile devices)
+* **Number of products slides at a time for iPads/Tablets devices:**
+slide_to_scroll_for_tablet="2" (Controls number of products rotate at a time for iPads/Tablets devices)
+* **Number of products slides at a time for Laptop/Small devices:**
+slide_to_scroll_for_laptop="2" (Controls number of products rotate at a time for Laptop/Small devices)
 * **Pagination and arrows:**
 dots="false" arrows="false" (Hide/Show pagination and arrows. By defoult value is "true". Values are true OR false)
 * **Autoplay and Autoplay Speed:**
@@ -111,6 +143,26 @@ slider_cls="products" (This parameter target the wooCommerce default class for p
 6. WooCommerce Top Rated Products in carousel view
 7. WooCommerce Most Recent Products in carousel view
 == Changelog ==
+= 1.1.4 =
+* Minor Update.. tested for latest wp compatibility..
+= 1.1.3 =
+* Minor Update.. tested for latest wp compatibility..
+= 1.1.2 =
+* Added woocommerce High Performance Order Storage compatibility.
+= 1.1.1 =
+* Added order, orderby and meta_key shortcode arguments for ordering your products as your wish.
+= 1.1.0 =
+* Minor Update.. tested for latest wp & wc compatibility..
+= 1.0.9 =
+* Added filter for limiting slides for various devices, mobile,tablet,iPad, laptop etc. Checked support for latest version wp and woocommerce.
+= 1.0.8 =
+* Added Recently Viewed Products shortcode.
+= 1.0.7 =
+* Added Ajax product & skus search.
+= 1.0.6 =
+* Added Filter by stock status & checked for latest wc and wp version compatibility.
+= 1.0.5 =
+* Added Filter by tag, sku & attributes.
 = 1.0.4 =
 * Added Product IDs Parameter to all shortcodes.
 = 1.0.3 =

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Woo Products Slider Shortcode Generator
  *
@@ -20,7 +21,7 @@ add_action( 'admin_menu', 'woopspro_register_shortcode_generator_page' );
  */
 function woopspro_register_shortcode_generator_page()
 {
-	add_submenu_page( 
+	add_submenu_page(
 		'edit.php?post_type=product',
 		__( 'Products Slider Pro', 'woo-products-slider-pro' ),
 		__( 'Products Slider Pro', 'woo-products-slider-pro' ),
@@ -55,6 +56,8 @@ function woopspro_slider_shortcode_generator_page()
 		woopspro_include_template( 'shortcode-column', array( 'id' => 'on_sale_products', 'title' => __( 'ON Sale Products Slider Shortcode', 'woo-products-slider-pro' ), 'shortcode' => 'woopspro_on_sale_products_slider' ) );
 
 		woopspro_include_template( 'shortcode-column', array( 'id' => 'top_rated_products', 'title' => __( 'Top Rated Products Slider Shortcode', 'woo-products-slider-pro' ), 'shortcode' => 'woopspro_top_rated_products_slider' ) );
+
+		woopspro_include_template( 'recently-viewed', array( 'id' => 'recently_viewed_products', 'title' => __( 'Recently Viewed Products Slider Shortcode', 'woo-products-slider-pro' ), 'shortcode' => 'woopspro_recently_viewed_products' ) );
 
 	woopspro_include_template( 'footer' );
 }

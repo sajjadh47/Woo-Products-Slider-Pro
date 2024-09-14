@@ -3,7 +3,7 @@
 **Contributors:** sajjad67 \
 **Tags:** best selling products, best selling products slider, slick slider, best selling products by category, shortcode, template code, featured product, featured product slider, Featured product by category, autoplay slider, best product slider, best product slider for woo shop, carousel, clean woo product slider, multiple product slider, product carousel,  product content slider, product contents carousel, product slider, product slider carousel for woo, products slider,  responsive product slider, responsive product carousel, slider, smooth product slider woo product slider,  advance slider, woo best selling products, woo category slider, latest products, most selling products, product carousel slider, recent product carousel, recent product slider, free,premium,pro \
 **Requires at least:** 5.6 \
-**Tested up to:** 6.0 \
+**Tested up to:** 6.6 \
 **License:** GPLv2 or later \
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -138,18 +138,51 @@ slider_cls="products" (This parameter target the wooCommerce default class for p
 
 ## Changelog
 
+### 1.1.4
+* Minor Update.. tested for latest wp compatibility..
+
+### 1.1.3
+* Minor Update.. tested for latest wp compatibility..
+
+### 1.1.2
+* Added woocommerce High Performance Order Storage compatibility.
+
+### 1.1.1
+* Added order, orderby and meta_key shortcode arguments for ordering your products as your wish.
+
+### 1.1.0
+* Minor Update.. tested for latest wp & wc compatibility..
+
+### 1.0.9
+* Added filter for limiting slides for various devices, mobile,tablet,iPad, laptop etc. Checked support for latest version wp and woocommerce.
+
+### 1.0.8
+* Added Recently Viewed Products shortcode.
+
+### 1.0.7
+* Added Ajax product & skus search.
+
+### 1.0.6
+* Added Filter by stock status & checked for latest wc and wp version compatibility.
+
+### 1.0.5
+* Added Filter by tag, sku & attributes.
+
 ### 1.0.4
-
 * Added Product IDs Parameter to all shortcodes.
+
 ### 1.0.3
-
 * Minor Update.. tested for latest wp compatibility..
+
 ### 1.0.2
-
 * Minor Update.. tested for latest wp compatibility..
+
 ### 1.0.1
-
 * Minor Update.. tested for latest wp compatibility..
-### 1.0
 
+### 1.0.0
 * Initial release.
+
+## Upgrade Notice
+
+Always try to keep your plugin update so that you can get the improved and additional features added to this plugin up to date.

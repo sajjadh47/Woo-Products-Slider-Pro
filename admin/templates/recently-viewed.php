@@ -16,56 +16,6 @@
 
 			<form class="collapse customize_shortcode_form form_<?php echo $options['id']; ?>" data-shortcode="<?php echo $options['shortcode']; ?>">
 				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_specific_products_filter"><?php echo __( 'Show Specific Products Only','woo-products-slider-pro' ); ?></label>
-						<select name="specific_products_filter" id="<?php echo $options['id']; ?>_specific_products_filter" class="specific_products_filter form-control" multiple="multiple"></select>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_stock_status_filter"><?php echo __( 'Filter By Stock Status','woo-products-slider-pro' ); ?></label>
-						<select name="stock_status" id="<?php echo $options['id']; ?>_stock_status_filter" class="select2 stock_status_filter form-control">
-							<?php echo woopspro_get_woo_stock_status_option_html(); ?>
-						</select>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_cat_filter"><?php echo __( 'Filter By Category','woo-products-slider-pro' ); ?></label>
-						<select name="cat_filter" id="<?php echo $options['id']; ?>_cat_filter" class="select2 cat_filter form-control" multiple="multiple">
-							<?php echo woopspro_get_woo_cats_option_html(); ?>
-						</select>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_tag_filter"><?php echo __( 'Filter By Tag','woo-products-slider-pro' ); ?></label>
-						<select name="tag_filter" id="<?php echo $options['id']; ?>_tag_filter" class="select2 tag_filter form-control" multiple="multiple">
-							<?php echo woopspro_get_woo_tags_option_html(); ?>
-						</select>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_sku_filter"><?php echo __( 'Filter By SKU','woo-products-slider-pro' ); ?></label>
-						<select name="sku_filter" id="<?php echo $options['id']; ?>_sku_filter" class="select2 sku_filter form-control" multiple="multiple"></select>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="<?php echo $options['id']; ?>_attribute_filter"><?php echo __( 'Filter By Attributes','woo-products-slider-pro' ); ?></label>
-						<select name="attribute_filter" id="<?php echo $options['id']; ?>_attribute_filter" class="select2 attribute_filter form-control" multiple="multiple">
-							<?php echo woopspro_get_woo_attributes_option_html(); ?>
-						</select>
-					</div>
-				</div>
-
-				<div class="row">
 					<div class="form-group col-md-4">
 						<label for="<?php echo $options['id']; ?>_limit"><?php echo __( 'Total Products To Query : Default All (-1)','woo-products-slider-pro' ); ?></label>
 						<input type="text" name="limit" id="<?php echo $options['id']; ?>_limit" class="form-control">

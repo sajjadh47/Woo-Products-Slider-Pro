@@ -10,50 +10,38 @@ jQuery( document ).ready( function( $ )
 
 		jQuery( '#' + slider_id + ' .' + slider_cls ).slick(
 		{
-			dots			: (slider_conf.dots) == "true" ? true : false,
+			dots			: ( slider_conf.dots ) == "true" ? true : false,
 			infinite		: true,
-			arrows			: (slider_conf.arrows) == "true" ? true : false,
-			speed			: parseInt(slider_conf.speed),
-			autoplay		: (slider_conf.autoplay) == "true" ? true : false,
-			autoplaySpeed	: parseInt(slider_conf.autoplay_speed),
-			slidesToShow	: parseInt(slider_conf.slide_to_show),
-			slidesToScroll	: parseInt(slider_conf.slide_to_scroll),
-			rtl             : (slider_conf.rtl) == "true" ? true : false,
+			arrows			: ( slider_conf.arrows ) == "true" ? true : false,
+			speed			: parseInt( slider_conf.speed ),
+			autoplay		: ( slider_conf.autoplay) == "true" ? true : false,
+			autoplaySpeed	: parseInt( slider_conf.autoplay_speed ),
+			slidesToShow	: parseInt( slider_conf.slide_to_show ),
+			slidesToScroll	: parseInt( slider_conf.slide_to_scroll ),
+			rtl             : ( slider_conf.rtl ) == "true" ? true : false,
 			responsive: [
 			{
-				breakpoint: 1023,
+				breakpoint: 1024,
 				settings:
 				{
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: false
+					slidesToShow: parseInt( slider_conf.slide_to_show_for_laptop ) ? parseInt( slider_conf.slide_to_show_for_laptop ) : 3,
+					slidesToScroll: parseInt( slider_conf.slide_to_scroll_for_laptop ) ? parseInt( slider_conf.slide_to_scroll_for_laptop ) : 3,
 				}
 			},
 			{
-				breakpoint: 767,	  			
+				breakpoint: 769,
 				settings:
 				{
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: parseInt( slider_conf.slide_to_show_for_tablet ) ? parseInt( slider_conf.slide_to_show_for_tablet ) : 2,
+					slidesToScroll: parseInt( slider_conf.slide_to_scroll_for_tablet ) ? parseInt( slider_conf.slide_to_scroll_for_tablet ) : 2,
 				}
 			},
 			{
-				breakpoint: 479,
+				breakpoint: 481,
 				settings:
 				{
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: false
-				}
-			},
-			{
-				breakpoint: 319,
-				settings:
-				{
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: false
+					slidesToShow: parseInt( slider_conf.slide_to_show_for_mobile ) ? parseInt( slider_conf.slide_to_show_for_mobile ) : 1,
+					slidesToScroll: parseInt( slider_conf.slide_to_scroll_for_mobile ) ? parseInt( slider_conf.slide_to_scroll_for_mobile ) : 1,
 				}	    		
 			}]
 		});
